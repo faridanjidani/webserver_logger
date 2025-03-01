@@ -53,7 +53,7 @@ This is a simple object oriented webserver logger that has been designed in C++.
 4. Generate the build files using CMake and build the project:
     ```bash
     cmake ..
-    make .
+    make 
 5. To run the executable file use the command below with the address to the raw input file. 
     ```bash
     ./WebServerLogger <address to the input raw file>

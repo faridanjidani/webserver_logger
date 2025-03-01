@@ -9,7 +9,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add include directories
 include_directories(include)
-# Add include directories
 include_directories(src/metrics)
 # Source files
 set(SOURCES
@@ -27,8 +26,6 @@ set(SOURCES
 # Enable testing
 enable_testing()
 add_subdirectory(tests)
-# Enable testing
-enable_testing()
 # Create executable
 add_executable(WebServerLogger ${SOURCES})
 

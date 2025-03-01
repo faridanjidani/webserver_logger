@@ -33,7 +33,6 @@ TEST(LogReceiverTest, ReadsLogFileCorrectly) {
         receivedLogs.push_back(logEntry);
     });
 
-    // Start receiving logs
     receiver.startReceiving();
 
     // Verify logs match expected values

@@ -1,4 +1,3 @@
-// HostAccessCounter.hpp
 #pragma once
 #include "IMetric.hpp"
 #include <unordered_map>

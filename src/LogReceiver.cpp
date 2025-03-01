@@ -22,7 +22,7 @@ void LogReceiver::processFile() {
     std::string line;
     while (std::getline(file, line)) {
         if (logCallback) {
-            logCallback(line); // Passes each log entry to the callback
+            logCallback(line);
         }
     }
 }
