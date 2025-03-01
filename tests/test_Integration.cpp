@@ -94,7 +94,6 @@ TEST(IntegrationTest, ProcessLogAndGenerateSortedOutputAccess) {
     logReceiver.startReceiving();
     auto sortedOutputAccess = resultFormatter.getSortedHostAccess();
     std::set<std::pair<std::string, int>> setAccess(sortedOutputAccess.begin(), sortedOutputAccess.end());
-    // Step 4: Compare results
     EXPECT_EQ(setAccess, hostAccessData);
 }
 
@@ -192,6 +191,5 @@ TEST(IntegrationTest, ProcessLogAndGenerateSortedOutputURI) {
     logReceiver.startReceiving();
     auto sortedOutputURI = resultFormatter.getSortedSuccessfulURIAccess();
     std::set<std::pair<std::string, int>> setURI(sortedOutputURI.begin(), sortedOutputURI.end());
-    // Step 4: Compare results
     EXPECT_EQ(setURI, uriAccessData);
 }

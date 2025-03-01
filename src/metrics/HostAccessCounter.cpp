@@ -1,4 +1,3 @@
-// HostAccessCounter.cpp
 #include "HostAccessCounter.hpp"
 #include <sstream>
 

@@ -20,12 +20,11 @@ public:
     int getSuccessfulURIAccessCount(const std::string& uri) const; 
     int getHostAccessCount(const std::string& uri) const;
 
-    // **Setter Methods for Metrics to Update Data**
     void incrementSuccessfulURIAccess(const std::string& uri);
     void incrementHostAccess(const std::string& host);
+
     // Methods to get all data for fomratted output
     std::unordered_map<std::string, int> getAllHostAccess() const;
     std::unordered_map<std::string, int> getAllSuccessfulURIAccess() const;
 
-    void printAllResults(std::ostream& os) const;
 };

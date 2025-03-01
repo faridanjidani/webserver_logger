@@ -36,7 +36,6 @@ TEST(StatsCollectorTest, MetricsProcessing) {
     // Add log entries to the StatsCollector
     addLogEntriesToStatsCollector(statsCollector, logEntries);
 
-    // Test the results in StatsCollector
 
     // Test successful URI access count for "/docs/Access"
     EXPECT_EQ(statsCollector.getSuccessfulURIAccessCount("/docs/Access"), 2);

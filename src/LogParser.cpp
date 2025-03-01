@@ -3,7 +3,6 @@
 #include <sstream>
 #include <iomanip>
 
-// @todo farid: check the regex pattern
 std::optional<LogEntry> LogParser::parseLogEntry(const std::string& rawLog) {
     std::regex logPattern(R"((\S+) \[(.*?)\] \"(\S+) (\S+) \S+\" (\d+) .*?)");
     std::smatch match;
