@@ -8,7 +8,7 @@ TEST(LogParserTest, ParsesValidLog) {
 
     ASSERT_TRUE(parsedEntry.has_value());
     EXPECT_EQ(parsedEntry->host, "wpbfl2-45.gate.net");
-    EXPECT_EQ(parsedEntry->timestamp, "29:23:55:29");
+    EXPECT_EQ(parsedEntry->timestamp, "2024-08-29 23:55:29");
     EXPECT_EQ(parsedEntry->method, "GET");
     EXPECT_EQ(parsedEntry->uri, "/docs/Access");
     EXPECT_EQ(parsedEntry->statusCode, 302);

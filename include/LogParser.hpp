@@ -14,4 +14,6 @@ struct LogEntry {
 class LogParser {
 public:
     static std::optional<LogEntry> parseLogEntry(const std::string& rawLog);
+private:    
+    static std::string convertTimestamp(const std::string& rawTimestamp);
 };
